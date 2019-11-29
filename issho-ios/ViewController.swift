@@ -33,6 +33,11 @@ class ViewController: UIViewController, APIControllerProtocol {
     func didReceiveAPIResults(_ results: JSON, call: String) {
         if call == "fetchedTopHeadlines" {
             self.articles = Article.articlesWithJSON(results)
+            
+            let url = URL(string: self.articles[0].urlToImage)
+            let data = try? Data(contentsOf: url!)
+            self.articleHeaderImage.image = UIImage(data: data!)
+            
         } else if call == "fetchedMessages" {
             self.messages = Message.messagesWithJSON(results)
         }
