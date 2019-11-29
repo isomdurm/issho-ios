@@ -19,6 +19,11 @@
 		48CA94742390B0370026FFEF /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA94732390B0370026FFEF /* APIController.swift */; };
 		48CA94762390B3540026FFEF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA94752390B3540026FFEF /* Message.swift */; };
 		48E06FC42391AA7E00BBC79A /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E06FC32391AA7E00BBC79A /* Article.swift */; };
+		48E06FC72391AEF600BBC79A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E06FC62391AEF600BBC79A /* SignInViewController.swift */; };
+		48E06FC92391AF0800BBC79A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E06FC82391AF0800BBC79A /* SignUpViewController.swift */; };
+		48E06FCC2391AF2200BBC79A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E06FCB2391AF2200BBC79A /* HomeViewController.swift */; };
+		48E06FD22391AFC100BBC79A /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E06FD12391AFC100BBC79A /* LandingViewController.swift */; };
+		48E06FD42391AFD100BBC79A /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E06FD32391AFD100BBC79A /* ForgotPasswordViewController.swift */; };
 		A46B74E087474268E7198E2E /* Pods_issho_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57ECAACB3050BA05790B845E /* Pods_issho_iosUITests.framework */; };
 		F0B51A771723F492E97D48E8 /* Pods_issho_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174B43831B61DDAF84133E5C /* Pods_issho_iosTests.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +68,11 @@
 		48CA94732390B0370026FFEF /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		48CA94752390B3540026FFEF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		48E06FC32391AA7E00BBC79A /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		48E06FC62391AEF600BBC79A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		48E06FC82391AF0800BBC79A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		48E06FCB2391AF2200BBC79A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		48E06FD12391AFC100BBC79A /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		48E06FD32391AFD100BBC79A /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		57ECAACB3050BA05790B845E /* Pods_issho_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_issho_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76882ACF21DBF143F1CEEE8B /* Pods-issho-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-issho-ios.debug.xcconfig"; path = "Target Support Files/Pods-issho-ios/Pods-issho-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		C62F2631E8322AC8387E0602 /* Pods-issho-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-issho-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-issho-iosUITests/Pods-issho-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,16 +132,15 @@
 		48CA94412390B0190026FFEF /* issho-ios */ = {
 			isa = PBXGroup;
 			children = (
-				48CA94422390B0190026FFEF /* AppDelegate.swift */,
-				48CA94442390B0190026FFEF /* ViewController.swift */,
-				48CA94462390B0190026FFEF /* Main.storyboard */,
-				48CA944C2390B01C0026FFEF /* Assets.xcassets */,
-				48CA944E2390B01C0026FFEF /* LaunchScreen.storyboard */,
 				48CA94512390B01C0026FFEF /* Info.plist */,
-				48CA94492390B0190026FFEF /* issho_ios.xcdatamodeld */,
-				48CA94732390B0370026FFEF /* APIController.swift */,
-				48CA94752390B3540026FFEF /* Message.swift */,
-				48E06FC32391AA7E00BBC79A /* Article.swift */,
+				48CA944E2390B01C0026FFEF /* LaunchScreen.storyboard */,
+				48CA94462390B0190026FFEF /* Main.storyboard */,
+				48E06FCE2391AF4300BBC79A /* application */,
+				48E06FC52391AED300BBC79A /* landing */,
+				48E06FCA2391AF1400BBC79A /* home */,
+				48E06FD02391AF8F00BBC79A /* cells */,
+				48E06FCD2391AF3000BBC79A /* models */,
+				48E06FCF2391AF5200BBC79A /* assets */,
 			);
 			path = "issho-ios";
 			sourceTree = "<group>";
@@ -152,6 +161,60 @@
 				48CA94672390B01C0026FFEF /* Info.plist */,
 			);
 			path = "issho-iosUITests";
+			sourceTree = "<group>";
+		};
+		48E06FC52391AED300BBC79A /* landing */ = {
+			isa = PBXGroup;
+			children = (
+				48CA94442390B0190026FFEF /* ViewController.swift */,
+				48E06FC82391AF0800BBC79A /* SignUpViewController.swift */,
+				48E06FC62391AEF600BBC79A /* SignInViewController.swift */,
+				48E06FD12391AFC100BBC79A /* LandingViewController.swift */,
+				48E06FD32391AFD100BBC79A /* ForgotPasswordViewController.swift */,
+			);
+			path = landing;
+			sourceTree = "<group>";
+		};
+		48E06FCA2391AF1400BBC79A /* home */ = {
+			isa = PBXGroup;
+			children = (
+				48E06FCB2391AF2200BBC79A /* HomeViewController.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		48E06FCD2391AF3000BBC79A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				48E06FC32391AA7E00BBC79A /* Article.swift */,
+				48CA94752390B3540026FFEF /* Message.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		48E06FCE2391AF4300BBC79A /* application */ = {
+			isa = PBXGroup;
+			children = (
+				48CA94422390B0190026FFEF /* AppDelegate.swift */,
+				48CA94732390B0370026FFEF /* APIController.swift */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		48E06FCF2391AF5200BBC79A /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				48CA94492390B0190026FFEF /* issho_ios.xcdatamodeld */,
+				48CA944C2390B01C0026FFEF /* Assets.xcassets */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		48E06FD02391AF8F00BBC79A /* cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 		A1A01595FF586D17FE5EAFC1 /* Frameworks */ = {
@@ -407,11 +470,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E06FC72391AEF600BBC79A /* SignInViewController.swift in Sources */,
 				48CA94742390B0370026FFEF /* APIController.swift in Sources */,
+				48E06FD42391AFD100BBC79A /* ForgotPasswordViewController.swift in Sources */,
+				48E06FC92391AF0800BBC79A /* SignUpViewController.swift in Sources */,
 				48CA94452390B0190026FFEF /* ViewController.swift in Sources */,
 				48E06FC42391AA7E00BBC79A /* Article.swift in Sources */,
+				48E06FCC2391AF2200BBC79A /* HomeViewController.swift in Sources */,
 				48CA94762390B3540026FFEF /* Message.swift in Sources */,
 				48CA944B2390B0190026FFEF /* issho_ios.xcdatamodeld in Sources */,
+				48E06FD22391AFC100BBC79A /* LandingViewController.swift in Sources */,
 				48CA94432390B0190026FFEF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

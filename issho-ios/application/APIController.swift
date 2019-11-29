@@ -48,4 +48,17 @@ class APIController {
         }
     }
     
+    func authenticate(_ email: String, password: String) {
+        let url = URL(string: self.server + "/api/users/signin")!
+        
+        let parameters: Dictionary<String, AnyObject> = ["email": email as AnyObject, "password": password as AnyObject]
+
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: URLEncoding.default)
+        .responseSwiftyJSON { dataResponse in
+            print(dataResponse)
+            
+            self.delegate!.didReceiveAPIResults(dataResponse.value!, call: "authenticated")
+        }
+    }
+    
 }

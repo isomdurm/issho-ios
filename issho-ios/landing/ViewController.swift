@@ -25,8 +25,9 @@ class ViewController: UIViewController, APIControllerProtocol {
         super.viewDidLoad()
         
         self.api = APIController(delegate: self)
-        self.api?.fetchMessages()
-        self.api?.fetchTopHeadlines()
+//        self.api?.fetchMessages()
+//        self.api?.fetchTopHeadlines()
+        self.api?.authenticate("isomdurm@gmail.com", password: "password")
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -40,6 +41,8 @@ class ViewController: UIViewController, APIControllerProtocol {
             
         } else if call == "fetchedMessages" {
             self.messages = Message.messagesWithJSON(results)
+        } else if call == "authenticated" {
+            print("working")
         }
     }
     
