@@ -37,4 +37,15 @@ class APIController {
         }
     }
     
+    func fetchTopHeadlines() {
+        let url = URL(string: self.server + "/api/news/top-headlines")!
+        
+        let parameters = Dictionary<String, Any>()
+        
+        Alamofire.request(url, method: .get, parameters: parameters, encoding: URLEncoding.default)
+        .responseSwiftyJSON { dataResponse in
+            self.delegate!.didReceiveAPIResults(dataResponse.value!, call: "fetchedTopHeadlines")
+        }
+    }
+    
 }

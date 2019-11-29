@@ -15,7 +15,9 @@ class ViewController: UIViewController, APIControllerProtocol {
     var api : APIController?
     
     var messages = [Message]()
+    var articles = [Article]()
 
+    @IBOutlet weak var articleHeaderImage: UIImageView!
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -24,12 +26,16 @@ class ViewController: UIViewController, APIControllerProtocol {
         
         self.api = APIController(delegate: self)
         self.api?.fetchMessages()
+        self.api?.fetchTopHeadlines()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     func didReceiveAPIResults(_ results: JSON, call: String) {
-        self.messages = Message.messagesWithJSON(results)
-        print(messages)
+        if call == "fetchedTopHeadlines" {
+            self.articles = Article.articlesWithJSON(results)
+        } else if call == "fetchedMessages" {
+            self.messages = Message.messagesWithJSON(results)
+        }
     }
     
     override func didReceiveMemoryWarning() {

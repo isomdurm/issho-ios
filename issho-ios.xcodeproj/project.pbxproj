@@ -18,6 +18,7 @@
 		48CA94662390B01C0026FFEF /* issho_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA94652390B01C0026FFEF /* issho_iosUITests.swift */; };
 		48CA94742390B0370026FFEF /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA94732390B0370026FFEF /* APIController.swift */; };
 		48CA94762390B3540026FFEF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA94752390B3540026FFEF /* Message.swift */; };
+		48E06FC42391AA7E00BBC79A /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E06FC32391AA7E00BBC79A /* Article.swift */; };
 		A46B74E087474268E7198E2E /* Pods_issho_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57ECAACB3050BA05790B845E /* Pods_issho_iosUITests.framework */; };
 		F0B51A771723F492E97D48E8 /* Pods_issho_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174B43831B61DDAF84133E5C /* Pods_issho_iosTests.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		48CA94672390B01C0026FFEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48CA94732390B0370026FFEF /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		48CA94752390B3540026FFEF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		48E06FC32391AA7E00BBC79A /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		57ECAACB3050BA05790B845E /* Pods_issho_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_issho_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76882ACF21DBF143F1CEEE8B /* Pods-issho-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-issho-ios.debug.xcconfig"; path = "Target Support Files/Pods-issho-ios/Pods-issho-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		C62F2631E8322AC8387E0602 /* Pods-issho-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-issho-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-issho-iosUITests/Pods-issho-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				48CA94492390B0190026FFEF /* issho_ios.xcdatamodeld */,
 				48CA94732390B0370026FFEF /* APIController.swift */,
 				48CA94752390B3540026FFEF /* Message.swift */,
+				48E06FC32391AA7E00BBC79A /* Article.swift */,
 			);
 			path = "issho-ios";
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 			files = (
 				48CA94742390B0370026FFEF /* APIController.swift in Sources */,
 				48CA94452390B0190026FFEF /* ViewController.swift in Sources */,
+				48E06FC42391AA7E00BBC79A /* Article.swift in Sources */,
 				48CA94762390B3540026FFEF /* Message.swift in Sources */,
 				48CA944B2390B0190026FFEF /* issho_ios.xcdatamodeld in Sources */,
 				48CA94432390B0190026FFEF /* AppDelegate.swift in Sources */,
