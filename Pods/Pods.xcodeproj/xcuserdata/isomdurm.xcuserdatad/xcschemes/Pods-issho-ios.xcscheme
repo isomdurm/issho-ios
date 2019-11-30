@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FAD678CA57F2F8A86639E856F89B9F89"
+               BlueprintIdentifier = "5B04581F48BD0C6B2883161B941F263C"
                BuildableName = "Pods_issho_ios.framework"
                BlueprintName = "Pods-issho-ios"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -24,6 +24,7 @@
 		48E06FCC2391AF2200BBC79A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E06FCB2391AF2200BBC79A /* HomeViewController.swift */; };
 		48E06FD22391AFC100BBC79A /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E06FD12391AFC100BBC79A /* LandingViewController.swift */; };
 		48E06FD42391AFD100BBC79A /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E06FD32391AFD100BBC79A /* ForgotPasswordViewController.swift */; };
+		48E06FD62392112E00BBC79A /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E06FD52392112E00BBC79A /* ArticleCell.swift */; };
 		A46B74E087474268E7198E2E /* Pods_issho_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57ECAACB3050BA05790B845E /* Pods_issho_iosUITests.framework */; };
 		F0B51A771723F492E97D48E8 /* Pods_issho_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174B43831B61DDAF84133E5C /* Pods_issho_iosTests.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		48E06FCB2391AF2200BBC79A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		48E06FD12391AFC100BBC79A /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		48E06FD32391AFD100BBC79A /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		48E06FD52392112E00BBC79A /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		57ECAACB3050BA05790B845E /* Pods_issho_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_issho_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76882ACF21DBF143F1CEEE8B /* Pods-issho-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-issho-ios.debug.xcconfig"; path = "Target Support Files/Pods-issho-ios/Pods-issho-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		C62F2631E8322AC8387E0602 /* Pods-issho-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-issho-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-issho-iosUITests/Pods-issho-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		48E06FD02391AF8F00BBC79A /* cells */ = {
 			isa = PBXGroup;
 			children = (
+				48E06FD52392112E00BBC79A /* ArticleCell.swift */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-issho-ios/Pods-issho-ios-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -412,6 +416,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +483,7 @@
 				48E06FC42391AA7E00BBC79A /* Article.swift in Sources */,
 				48E06FCC2391AF2200BBC79A /* HomeViewController.swift in Sources */,
 				48CA94762390B3540026FFEF /* Message.swift in Sources */,
+				48E06FD62392112E00BBC79A /* ArticleCell.swift in Sources */,
 				48CA944B2390B0190026FFEF /* issho_ios.xcdatamodeld in Sources */,
 				48E06FD22391AFC100BBC79A /* LandingViewController.swift in Sources */,
 				48CA94432390B0190026FFEF /* AppDelegate.swift in Sources */,

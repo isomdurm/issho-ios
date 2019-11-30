@@ -9,6 +9,7 @@ target 'issho-ios' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'Alamofire-SwiftyJSON'
+  pod 'Kingfisher'
 
   target 'issho-iosTests' do
     inherit! :search_paths
